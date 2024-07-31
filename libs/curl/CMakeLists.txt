@@ -8,6 +8,7 @@ ExternalProject_Add(
         -DWAMR_ROOT_DIR=${CMAKE_SOURCE_DIR}/libs/wasm-micro-runtime/src
         -DCMAKE_TOOLCHAIN_FILE=${WASI_SDK_PREFIX}/share/cmake/wasi-sdk-pthread.cmake
         -DWASI_SDK_PREFIX=${WASI_SDK_PREFIX}
+        -DHTTP_ONLY=ON
         -DCURL_ENABLE_EXPORT_TARGET=ON
         -DENABLE_WEBSOCKETS=ON
         -DCURL_USE_OPENSSL=ON
